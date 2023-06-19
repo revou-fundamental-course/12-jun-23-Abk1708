@@ -1,0 +1,51 @@
+/*Default Element*/
+body {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+header {
+    margin: 0;
+    color: #DF01D7;
+    line-height: 1.5;
+    font-family: "Kablammo", "PT Sans", Calibri, Tahoma, sans-serif;
+}
+
+fieldset {
+    border-radius: 8px;
+    width: 20%;
+}
+
+button {
+    background-color: #1c841c;
+    padding: 5px 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    border: none;
+}
+
+button:hover {
+    background-color: #166916;
+}
+
+button:active {
+    transform: translateY(1px);
+}
+
+/*ID*/
+#InputField {
+    outline: none;
+    font-size: large;
+    border-radius: 12px;
+    border: solid #2EFE2E;
+    cursor: pointer; 
+}
+
+#InputField:focus {
+    border: solid #1c841c;
+}
+
+/*Class*/
+.InputButtonSection {
+    display: flex;
+    flex-direction: row;
+}
