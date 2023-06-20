@@ -49,3 +49,18 @@ button:active {
     display: flex;
     flex-direction: row;
 }
+
+.scientific {
+    font-size: 130%;
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.numerical {
+    font-size: 130%;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.operator {
+    vertical-align: text-top;
+}
