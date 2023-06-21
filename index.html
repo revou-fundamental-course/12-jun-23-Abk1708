@@ -2,6 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Temperature Conversion Web</title>
         <link rel="stylesheet" href="/css/style.css">
@@ -13,41 +14,52 @@
         <script src="./js/script.js"></script>
         <header>
             <h1>Temperature Conversion</h1>
+            <p class="openpar">
+                Masukan suhu derajat Celcius (°C) ke kotak di bawah, lalu klik tombol konversi<br>
+                untuk mendapatkan hasil konversi dalam bentuk Fahrenheit(°F).
+            </p>
+            <br><br><br><br>
         </header>
         <main>
-            <p>
-            Masukan suhu derajat Celcius (°C) ke kotak di bawah, lalu klik tombol konversi<br>
-            untuk mendapatkan hasil konversi dalam bentuk Farenheit(°F).
-            </p>
             <fieldset>
-                <legend>Celcius (°C)</legend>
-                <section class="InputSection">
-                    
-                    <input type="number" id="InputVal" placeholder="Input Konversi"/>
-                    <div class="InputButtonSection">
+                <legend>Celcius (°C) - Fahrenheit(°F)</legend>
+                    <input type="number" id="InputVal" placeholder="Celsius (°C)" style="margin-bottom: 5px;"/>
+                    <div class="InputButtonSection" style="margin-bottom: 5px;">
                         <button onclick="ConClick()">Conversion</button>
                         <button onclick="resetForm()">Reset</button>
                         <button>Reverse</button> 
                     </div>
-                </section>
+                    <input type="number" id="OutputVal" placeholder="Fahrenheit (°F)" style="margin-bottom: 5px;"/>
+                    <textarea id="Calculation" placeholder="Kalkulasi"></textarea>
             </fieldset>
             <fieldset>
-                <legend>Farenheit(°F)</legend>
-                <section class="OutputSection">
-                    <textarea id="OutputVal" placeholder="Hasil Konversi" readonly></textarea>
-                </section>
+                <legend>Celcius (°C) - Kelvin(°K)</legend>
+                    <input type="number" id="InputVal" placeholder="Celsius (°C)" style="margin-bottom: 5px;"/>
+                    <div class="InputButtonSection" style="margin-bottom: 5px;">
+                        <button onclick="ConClick()">Conversion</button>
+                        <button onclick="resetForm()">Reset</button>
+                        <button>Reverse</button> 
+                    </div>
+                    <input type="number" id="OutputVal" placeholder="Kelvin(°K)" style="margin-bottom: 5px;"/>
+                    <textarea id="Calculation" placeholder="Kalkulasi"></textarea>
             </fieldset>
             <fieldset>
-                <legend>Kalkulasi</legend>
-                <section class="InputSection">
-                    <input type="number" id="Calculation"/>
-                </section>
+                <legend>Fahrenheit(°F) - Kelvin(°K)</legend>
+                    <input type="number" id="InputVal" placeholder="Fahrenheit (°F)" style="margin-bottom: 5px;"/>
+                    <div class="InputButtonSection" style="margin-bottom: 5px;">
+                        <button onclick="ConClick()">Conversion</button>
+                        <button onclick="resetForm()">Reset</button>
+                        <button>Reverse</button> 
+                    </div>
+                    <input type="number" id="OutputVal" placeholder="Kelvin(°K)" style="margin-bottom: 5px;"/>
+                    <textarea id="Calculation" placeholder="Kalkulasi"></textarea>
             </fieldset>
         </main>
         <foter>
-            <b>Cara Konversi Dari Celcius (°C) ke Farenheit (°F)</b>
+            <br><br><br><br>
+            <b>Cara Konversi Dari Celcius (°C) ke Fahrenheit (°F)</b>
             <hr>
-            <p>Suhu <fonts class="scientific">S</fonts> dalam derajat Farenheit (°F) sama dengan suhu <fonts class="scientific">S</fonts> dalam derajat<br>
+            <p>Suhu <fonts class="scientific">S</fonts> dalam derajat Fahrenheit (°F) sama dengan suhu <fonts class="scientific">S</fonts> dalam derajat<br>
             Celsius (°C) kali <fonts class="numerical">9/5</fonts> tambah <fonts class="numerical">32</fonts>.
             </p>
             <p><fonts class="scientific">S</fonts><sub>(°F)</sub> <fonts class="numerical">= (</fonts><fonts class="scientific">S</fonts><sub>(°C)</sub> <fonts class="operator">x</fonts> <fonts class="numerical">9/5) + 32</fonts></p>
