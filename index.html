@@ -10,6 +10,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Kablammo&display=swap" rel="stylesheet">
     </head>
     <body>
+        <script src="./js/script.js"></script>
         <header>
             <h1>Temperature Conversion</h1>
         </header>
@@ -21,24 +22,25 @@
             <fieldset>
                 <legend>Celcius (°C)</legend>
                 <section class="InputSection">
-                    <input type="number" id="InputField"/>
+                    
+                    <input type="number" id="InputVal" placeholder="Input Konversi"/>
                     <div class="InputButtonSection">
-                        <button>Conversion</button>
-                        <button>Reset</button>
+                        <button onclick="ConClick()">Conversion</button>
+                        <button onclick="resetForm()">Reset</button>
                         <button>Reverse</button> 
                     </div>
                 </section>
             </fieldset>
             <fieldset>
                 <legend>Farenheit(°F)</legend>
-                <section class="InputSection">
-                    <input type="number" id="InputField"/>
+                <section class="OutputSection">
+                    <textarea id="OutputVal" placeholder="Hasil Konversi" readonly></textarea>
                 </section>
             </fieldset>
             <fieldset>
                 <legend>Kalkulasi</legend>
                 <section class="InputSection">
-                    <input type="number" id="InputField"/>
+                    <input type="number" id="Calculation"/>
                 </section>
             </fieldset>
         </main>
@@ -48,9 +50,9 @@
             <p>Suhu <fonts class="scientific">S</fonts> dalam derajat Farenheit (°F) sama dengan suhu <fonts class="scientific">S</fonts> dalam derajat<br>
             Celsius (°C) kali <fonts class="numerical">9/5</fonts> tambah <fonts class="numerical">32</fonts>.
             </p>
-            <p><fonts class="scientific">S</fonts><sub>(°F)</sub> <fonts class="numerical">=</fonts> <fonts class="scientific">(S</fonts><sub>(°C)</sub> <fonts class="operator">x</fonts> <fonts class="numerical">9/5) + 32</fonts></p>
+            <p><fonts class="scientific">S</fonts><sub>(°F)</sub> <fonts class="numerical">= (</fonts><fonts class="scientific">S</fonts><sub>(°C)</sub> <fonts class="operator">x</fonts> <fonts class="numerical">9/5) + 32</fonts></p>
             <p>atau</p>
-            <p><fonts class="scientific">S</fonts><sub>(°F)</sub> <fonts class="numerical">=</fonts> <fonts class="scientific">(S</fonts><sub>(°C)</sub> <fonts class="operator">x</fonts> <fonts class="numerical">1.8) + 32</fonts></p>
+            <p><fonts class="scientific">S</fonts><sub>(°F)</sub> <fonts class="numerical">= (</fonts><fonts class="scientific">S</fonts><sub>(°C)</sub> <fonts class="operator">x</fonts> <fonts class="numerical">1.8) + 32</fonts></p>
         </foter>
     </body>
 </html>
