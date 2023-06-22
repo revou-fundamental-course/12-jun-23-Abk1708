@@ -1,9 +1,9 @@
-var CelFah = true;
+var CelFah = true; //Saves boolean value for button function.//
 
 function ConClickCF() {
-    var inputtempCF = document.getElementById("InputValCF").value;
+    var inputtempCF = document.getElementById("InputValCF").value; //Fetch the user value and saves it.//
 
-    if (inputtempCF == "") {
+    if (inputtempCF == "") { //Alert popup will occur and reset the form if user press the converse button without inputing a value.//
         document.getElementById("InputValCF").value = "0";
         document.getElementById("OutputValCF").value = "";
         document.getElementById("CalculationCF").value = "";
@@ -12,16 +12,16 @@ function ConClickCF() {
         return;
     }
 
-    inputtempCF = parseFloat(inputtempCF);
+    inputtempCF = parseFloat(inputtempCF); //Turn user input into float value.//
 
-    if (CelFah == true) {
+    if (CelFah == true) { //Convert user input into the desired temperature.//
         var resultCF = (inputtempCF*1.8)+32;
 
         document.getElementById("OutputValCF").value = resultCF;
         document.getElementById("CalculationCF").value = `(9/5) * ${inputtempCF}°C + 32 = ${resultCF}°F`;
 
         document.getElementById("ConvSeqCF").innerHTML = "Rangkaian kalkulasi Celsius (°C) ke Fahrenheit (°F)";
-    } else if (CelFah == false) {
+    } else if (CelFah == false) { //Reverse which temperature to/got convert.//
         var resultCF = (inputtempCF-32)/1.8;
 
         document.getElementById("OutputValCF").value = resultCF;
@@ -29,19 +29,19 @@ function ConClickCF() {
 
         document.getElementById("ConvSeqCF").innerHTML = "Rangkaian kalkulasi Fahrenheit (°F) ke Celsius (°C)";
     } else {
-        console.log("error");
+        console.log("error"); //Print an error message into console if .//
     }
     
     
 }
 
-function resetFormCF() {
+function resetFormCF() { //Reset the form value.//
     document.getElementById('InputValCF').value = '0';
     document.getElementById('OutputValCF').value = '';
     document.getElementById('CalculationCF').value = '';
 }
 
-function reverseCF() {
+function reverseCF() { //Change boolean value for adjusting temperatue input/output.//
     CelFah = !CelFah;
 
     document.getElementById("InputValCF").value = "0";

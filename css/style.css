@@ -1,6 +1,10 @@
+@media only screen and (max-width: 600px) {...}
 /*Default Element*/
 body {
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-image: url('../assets/47.jpg');
+    background-attachment: fixed;
+    background-size: cover;
 }
 
 header {
@@ -14,23 +18,27 @@ fieldset {
     width: 30%;
     display: flex;
     flex-direction: column;
+    background-color: #17594A;
 }
 
 button {
-    background-color: #1c841c;
+    background-color: #019c7d;
     padding: 5px 10px;
     border-radius: 8px;
     cursor: pointer;
     border: none;
     margin-left: 5px;
+    box-shadow: 0 3px #999;
 }
 
 button:hover {
-    background-color: #166916;
+    background-color: #016a55;
 }
 
 button:active {
     transform: translateY(1px);
+    box-shadow: 0 2px #666;
+    background-color: #016a55;
 }
 
 main {
@@ -42,22 +50,35 @@ input {
     outline: none;
     font-size: large;
     border-radius: 12px;
-    border: solid #2EFE2E;
+    border: solid #014337;
     cursor: pointer;
     margin-bottom: 5px;
 }
 
 input:focus {
-    border: solid #1c841c;
+    border: solid #002e26;
 }
 
 textarea {
     outline: none;
     font-size: large;
     border-radius: 12px;
-    border: solid #2EFE2E;
+    border: solid #014337;
     cursor: pointer;
     margin-bottom: 5px;
+}
+
+h1 {
+    text-align: center;
+    margin-top: -8px;
+    background-blend-mode: hue;
+}
+
+legend {
+    background-color: #019c7d;
+    border: solid #014337;
+    border-radius: 8px;
+    border: 10px groove (internal value);
 }
 
 /*ID*/
@@ -91,6 +112,11 @@ textarea {
 }
 
 /*Class*/
+.openpar {
+    color: antiquewhite;
+    text-align: center;
+}
+
 .InputButtonSection {
     display: flex;
     flex-direction: row;
@@ -125,3 +151,12 @@ textarea {
     display: flex;
     flex-direction: row;
 }
+
+.SubTilCF {
+    color:antiquewhite;
+}
+
+.SubContCF {
+    color:antiquewhite;
+}
+
