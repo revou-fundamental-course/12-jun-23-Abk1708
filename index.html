@@ -23,48 +23,125 @@
         <main>
             <fieldset>
                 <legend>Celcius (°C) - Fahrenheit(°F)</legend>
-                    <input type="number" id="InputVal" placeholder="Celsius (°C)" style="margin-bottom: 5px;"/>
-                    <div class="InputButtonSection" style="margin-bottom: 5px;">
-                        <button onclick="ConClick()">Conversion</button>
-                        <button onclick="resetForm()">Reset</button>
-                        <button>Reverse</button> 
+                    <input type="number" id="InputValCF"/>
+                    <div class="InputButtonSection">
+                        <button onclick="ConClickCF()">Conversion</button>
+                        <button onclick="resetFormCF()">Reset</button>
+                        <button onclick="reverseCF()">Reverse</button> 
                     </div>
-                    <input type="number" id="OutputVal" placeholder="Fahrenheit (°F)" style="margin-bottom: 5px;"/>
-                    <textarea id="Calculation" placeholder="Kalkulasi"></textarea>
+                    <input type="number" id="OutputValCF" readonly>
+                    <p id="ConvSeqCF">Rangkaian kalkulasi Celsius (°C) ke Fahrenheit (°F)</p>
+                    <textarea id="CalculationCF" readonly></textarea>
             </fieldset>
             <fieldset>
                 <legend>Celcius (°C) - Kelvin(°K)</legend>
-                    <input type="number" id="InputVal" placeholder="Celsius (°C)" style="margin-bottom: 5px;"/>
-                    <div class="InputButtonSection" style="margin-bottom: 5px;">
-                        <button onclick="ConClick()">Conversion</button>
-                        <button onclick="resetForm()">Reset</button>
-                        <button>Reverse</button> 
+                    <input type="number" id="InputValCK"/>
+                    <div class="InputButtonSection">
+                        <button onclick="ConClickCK()">Conversion</button>
+                        <button onclick="resetFormCK()">Reset</button>
+                        <button onclick="reverseCK()">Reverse</button> 
                     </div>
-                    <input type="number" id="OutputVal" placeholder="Kelvin(°K)" style="margin-bottom: 5px;"/>
-                    <textarea id="Calculation" placeholder="Kalkulasi"></textarea>
+                    <input type="number" id="OutputValCK" readonly/>
+                    <p id="ConvSeqCK">Rangkaian kalkulasi Celsius (°C) ke Kelvin(°K)</p>
+                    <textarea id="CalculationCK" readonly></textarea>
             </fieldset>
             <fieldset>
                 <legend>Fahrenheit(°F) - Kelvin(°K)</legend>
-                    <input type="number" id="InputVal" placeholder="Fahrenheit (°F)" style="margin-bottom: 5px;"/>
-                    <div class="InputButtonSection" style="margin-bottom: 5px;">
-                        <button onclick="ConClick()">Conversion</button>
-                        <button onclick="resetForm()">Reset</button>
-                        <button>Reverse</button> 
+                    <input type="number" id="InputValKF"/>
+                    <div class="InputButtonSection">
+                        <button onclick="ConClickKF()">Conversion</button>
+                        <button onclick="resetFormKF()">Reset</button>
+                        <button onclick="reverseKF()">Reverse</button> 
                     </div>
-                    <input type="number" id="OutputVal" placeholder="Kelvin(°K)" style="margin-bottom: 5px;"/>
-                    <textarea id="Calculation" placeholder="Kalkulasi"></textarea>
+                    <input type="number" id="OutputValKF" readonly/>
+                    <p id="ConvSeqKF">Rangkaian kalkulasi Fahrenheit (°F) ke Kelvin(°K)</p>
+                    <textarea id="CalculationKF" readonly></textarea>
             </fieldset>
         </main>
         <foter>
             <br><br><br><br>
-            <b>Cara Konversi Dari Celcius (°C) ke Fahrenheit (°F)</b>
+            <div class="SubTilCF">
+                <div style="margin-left: 50px;">Cara Konversi Dari Celcius (°C) ke Fahrenheit (°F)</div>
+                <div style="margin-left: 600px;">Cara Konversi Dari Fahrenheit (°F) ke Celcius (°C)</div>
+            </div>
             <hr>
-            <p>Suhu <fonts class="scientific">S</fonts> dalam derajat Fahrenheit (°F) sama dengan suhu <fonts class="scientific">S</fonts> dalam derajat<br>
-            Celsius (°C) kali <fonts class="numerical">9/5</fonts> tambah <fonts class="numerical">32</fonts>.
-            </p>
-            <p><fonts class="scientific">S</fonts><sub>(°F)</sub> <fonts class="numerical">= (</fonts><fonts class="scientific">S</fonts><sub>(°C)</sub> <fonts class="operator">x</fonts> <fonts class="numerical">9/5) + 32</fonts></p>
-            <p>atau</p>
-            <p><fonts class="scientific">S</fonts><sub>(°F)</sub> <fonts class="numerical">= (</fonts><fonts class="scientific">S</fonts><sub>(°C)</sub> <fonts class="operator">x</fonts> <fonts class="numerical">1.8) + 32</fonts></p>
+            <div class="SubContCF">
+                <div style="margin-left: 50px;">
+                Suhu <fonts class="scientific">S</fonts> dalam derajat Fahrenheit (°F) sama dengan suhu <fonts class="scientific">S</fonts> dalam derajat<br>
+                Celsius (°C) kali <fonts class="numerical">9/5</fonts> tambah <fonts class="numerical">32</fonts>.
+                </div>
+                <div style="margin-left: 465px;">
+                Suhu <fonts class="scientific">S</fonts> dalam derajat Celcius (°C) sama dengan suhu <fonts class="scientific">S</fonts> dalam derajat<br>
+                Fahrenheit (°F) kali <fonts class="numerical">5/9</fonts> kurang <fonts class="numerical">32</fonts>.
+                </div>
+            </div>
+            <br>
+            <div class="SubContCF">
+                <div style="margin-left: 50px;"><fonts class="scientific">S</fonts><sub>(°F)</sub> <fonts class="numerical">= (</fonts><fonts class="scientific">S</fonts><sub>(°C)</sub> <fonts class="operator">x</fonts> <fonts class="numerical">9/5) + 32</fonts></div>
+                <div style="margin-left: 745px;"><fonts class="scientific">S</fonts><sub>(°C)</sub> <fonts class="numerical">= (</fonts><fonts class="scientific">S</fonts><sub>(°F)</sub> <fonts class="operator">x</fonts> <fonts class="numerical">5/9) - 32</fonts></div>
+            </div>
+            <br>
+            <div class="SubContCF">
+                <div style="margin-left: 50px;">atau</div>
+                <div style="margin-left: 905px;">atau</div>
+            </div>
+            <br>
+            <div class="SubContCF">
+                <div style="margin-left: 50px;"><fonts class="scientific">S</fonts><sub>(°F)</sub> <fonts class="numerical">= (</fonts><fonts class="scientific">S</fonts><sub>(°C)</sub> <fonts class="operator">x</fonts> <fonts class="numerical">1.8) + 32</fonts></div>
+                <div style="margin-left: 745px;"><fonts class="scientific">S</fonts><sub>(°C)</sub> <fonts class="numerical">= (</fonts><fonts class="scientific">S</fonts><sub>(°F)</sub> <fonts class="operator">x</fonts> <fonts class="numerical">0.56) - 32</fonts></div>
+            </div>
+            <br><br><br><br>
+            <div class="SubTilCF">
+                <div style="margin-left: 50px;">Cara Konversi Dari Celcius(°C) ke Kelvin(°K)</div>
+                <div style="margin-left: 630px;">Cara Konversi Dari Kelvin(°K) ke Celcius(°C)</div>
+            </div>
+            <hr>
+            <div class="SubContCF">
+                <div style="margin-left: 50px;">
+                Suhu <fonts class="scientific">S</fonts> dalam derajat Kelvin(°K) sama dengan suhu <fonts class="scientific">S</fonts> dalam derajat<br>
+                Celsius (°C) tmbah <fonts class="numerical">273</fonts>.
+                </div>
+                <div style="margin-left: 495px;">
+                Suhu <fonts class="scientific">S</fonts> dalam derajat Celcius (°C) sama dengan suhu <fonts class="scientific">S</fonts> dalam derajat<br>
+                Kelvin(°K) kurang <fonts class="numerical">273</fonts>.
+                </div>
+            </div>
+            <br>
+            <div class="SubContCF">
+                <div style="margin-left: 50px;"><fonts class="scientific">S</fonts><sub>(°K)</sub> <fonts class="numerical">= </fonts><fonts class="scientific">S</fonts><sub>(°C)</sub> <fonts class="operator">+</fonts> <fonts class="numerical">273</fonts></div>
+                <div style="margin-left: 795px;"><fonts class="scientific">S</fonts><sub>(°C)</sub> <fonts class="numerical">= </fonts><fonts class="scientific">S</fonts><sub>(°K)</sub> <fonts class="operator">-</fonts> <fonts class="numerical">273</fonts></div>
+            </div>
+            <br><br><br><br>
+            <div class="SubTilCF">
+                <div style="margin-left: 50px;">Cara Konversi Dari Fahrenheit (°F) ke Kelvin(°K)</div>
+                <div style="margin-left: 615px;">Cara Konversi Dari Kelvin(°K) ke Fahrenheit (°F)</div>
+            </div>
+            <hr>
+            <div class="SubContCF">
+                <div style="margin-left: 50px;">
+                Suhu <fonts class="scientific">S</fonts> dalam derajat Kelvin(°K) sama dengan suhu <fonts class="scientific">S</fonts> dalam derajat<br>
+                Celsius (°C) kali <fonts class="numerical">9/5</fonts> tambah <fonts class="numerical">32</fonts>.
+                </div>
+                <div style="margin-left: 497px;">
+                Suhu <fonts class="scientific">S</fonts> dalam derajat Fahrenheit (°F) sama dengan suhu <fonts class="scientific">S</fonts> dalam derajat<br>
+                Fahrenheit (°F) kurang <fonts class="numerical">32</fonts> kali <fonts class="numerical">5/9</fonts> tambah <fonts class="numerical">273</fonts>.
+                </div>
+            </div>
+            <br>
+            <div class="SubContCF">
+                <div style="margin-left: 50px;"><fonts class="scientific">S</fonts><sub>(°K)</sub> <fonts class="numerical">= { </fonts><fonts class="numerical">5/9 (</fonts><fonts class="scientific">S</fonts><sub>(°F)</sub> <fonts class="operator">-</fonts> <fonts class="numerical">32) + 273 }</fonts></div>
+                <div style="margin-left: 685px;"><fonts class="scientific">S</fonts><sub>(°F)</sub> <fonts class="numerical">= { </fonts><fonts class="numerical">9/5 (</fonts><fonts class="scientific">S</fonts><sub>(°K)</sub> <fonts class="operator">-</fonts> <fonts class="numerical">273) + 32 }</fonts></div>
+            </div>
+            <br>
+            <div class="SubContCF">
+                <div style="margin-left: 50px;">atau</div>
+                <div style="margin-left: 908px;">atau</div>
+            </div>
+            <br>
+            <div class="SubContCF">
+                <div style="margin-left: 50px;"><fonts class="scientific">S</fonts><sub>(°K)</sub> <fonts class="numerical">= { </fonts><fonts class="numerical">0.56 (</fonts><fonts class="scientific">S</fonts><sub>(°C)</sub> <fonts class="operator">-</fonts> <fonts class="numerical">32) + 273 }</fonts></div>
+                <div style="margin-left: 673px;"><fonts class="scientific">S</fonts><sub>(°F)</sub> <fonts class="numerical">= { </fonts><fonts class="numerical">1.8 (</fonts><fonts class="scientific">S</fonts><sub>(°K)</sub> <fonts class="operator">-</fonts> <fonts class="numerical">273) + 32 }</fonts></div>
+            </div>
         </foter>
     </body>
 </html>

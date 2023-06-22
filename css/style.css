@@ -22,6 +22,7 @@ button {
     border-radius: 8px;
     cursor: pointer;
     border: none;
+    margin-left: 5px;
 }
 
 button:hover {
@@ -37,33 +38,55 @@ main {
     justify-content: space-evenly;
 }
 
-/*ID*/
-#InputVal {
+input {
     outline: none;
     font-size: large;
     border-radius: 12px;
     border: solid #2EFE2E;
     cursor: pointer;
-
+    margin-bottom: 5px;
 }
 
-#InputVal:focus {
+input:focus {
     border: solid #1c841c;
 }
 
-#OutputVal {
+textarea {
     outline: none;
     font-size: large;
     border-radius: 12px;
     border: solid #2EFE2E;
-    cursor: default; 
+    cursor: pointer;
+    margin-bottom: 5px;
 }
 
-#Calculation {
-    outline: none;
-    font-size: large;
-    border-radius: 12px;
-    border: solid #2EFE2E;
+/*ID*/
+#OutputValCF {
+    cursor: default;
+}
+
+#OutputValCK {
+    cursor: default;
+}
+
+#OutputValKF {
+    cursor: default;
+}
+
+#ConvSeq {
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+#CalculationCF {
+    cursor: default;
+}
+
+#CalculationCK {
+    cursor: default;
+}
+
+#CalculationKF {
     cursor: default;
 }
 
@@ -71,6 +94,7 @@ main {
 .InputButtonSection {
     display: flex;
     flex-direction: row;
+    margin-bottom: 5px;
 }
 
 .scientific {
@@ -88,3 +112,16 @@ main {
     vertical-align: text-top;
 }
 
+.descflex {
+    display: flex;
+}
+
+.SubTilCF {
+    display: flex;
+    flex-direction: row;
+}
+
+.SubContCF {
+    display: flex;
+    flex-direction: row;
+}
